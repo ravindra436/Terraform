@@ -27,7 +27,7 @@ resource "aws_security_group" "allow-ssh" {
     cidr_blocks     = ["0.0.0.0/0"]
   }
   tags ={
-    appliction = "DCP"
+    application = "DCP"
   }
 }
 
