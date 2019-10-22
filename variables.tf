@@ -1,6 +1,7 @@
 variable "aws_region" {
   default = "eu-west-2"
 }
+variable "ami_id"{}
 variable "cidr_block_vpc"{}
 variable "cidr_block_public"{}
 variable "map_public_ip_on_launch_public"{}
