@@ -1,5 +1,5 @@
 resource "aws_instance" "my-test-instance" {
-  ami                    = "ami-0bdfa1adc3878cd23"
+  ami                    = "${ami_id}"
   instance_type          = "t2.micro"
   subnet_id              = "${aws_subnet.main-public-1.id}"
   vpc_security_group_ids = ["${aws_security_group.allow-ssh.id}"]
